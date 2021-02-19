@@ -16,7 +16,7 @@ obj/data_handler.o : $(SOURCE_DIR)/data_handler.cc
 obj/data.o : $(SOURCE_DIR)/data.cc
 	$(CC) -fPIC $(CFLAGS) -o obj/data.o -I$(INCLUDE_DIR) -c $(SOURCE_DIR)/data.cc
 clean:
-	rm -r $(KMEANS_ROOT)/lib
-	rm -r $(KMEANS_ROOT)/obj
+	rm -rf $(KMEANS_ROOT)/lib
+	rm -rf $(KMEANS_ROOT)/obj
 # nếu chưa có KMEANS_ROOT thì gõ lệnh
 # export KMEANS_ROOT=$PWD
